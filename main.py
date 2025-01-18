@@ -13,3 +13,14 @@ manager.add_product(product2)
 # Prikaz proizvoda i ukupne vrednosti inventara
 manager.display_products()
 print(f"Total inventory value: ${manager.total_inventory_value()}")
+from cart import Cart
+
+# Kreiranje korpe
+cart = Cart()
+cart.add_to_cart(product1)
+cart.add_to_cart(product2)
+
+# Prikaz sadržaja korpe
+cart.display_cart()
+print(f"Total cart value: ${cart.calculate_total()}")
+
